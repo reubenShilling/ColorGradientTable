@@ -1,10 +1,4 @@
 $(function () {
-    // ********************************************************************************************************************************* //
-    // This entire algorithm should be reworked to only divide by a number that does not produce a remainder.
-    // It "works" as is but values are not what they should be when number of divisions (in this case "rows") is not a factor of 3.
-    // ********************************************************************************************************************************* //
-
-    // event listener to increment colors on input change
     $("#tableRowCount").on("keypress keyup change", function (event) {
         if (event.type === "keypress" && event.key === "Enter")
             event.preventDefault();
